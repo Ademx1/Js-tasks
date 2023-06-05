@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .form-control {
+    width: 600px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .fa-eye {
+    cursor: pointer;
+    margin-left: 30px;
+    position:relative;
+    z-index: 2;
+  }
+
+  .fa-eye::before {
+    content: "👁️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-300%, -150%);
+  }
